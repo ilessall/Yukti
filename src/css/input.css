@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    @apply bg-lightPurple; 
+}
+
 
 .navbar-fixed {
-    @apply fixed z-[9999] bg-lightPurple;
+    @apply fixed z-[9999] ;
+   
 }
 
 .hamburger-line {
