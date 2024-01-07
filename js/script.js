@@ -19,3 +19,36 @@ hamburger.addEventListener('click', function () {
 });
 
 
+// Slider
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.h-96 > div');
+
+function showSlide(n) {
+  slides.forEach(slide => {
+    slide.style.display = 'none';
+  });
+
+  slides[n].style.display = 'block';
+}
+
+function prevSlide() {
+  if (currentSlide === 0) {
+    currentSlide = slides.length - 1;
+  } else {
+    currentSlide--;
+  }
+  showSlide(currentSlide);
+}
+
+function nextSlide() {
+  if (currentSlide === slides.length - 1) {
+    currentSlide = 0;
+  } else {
+    currentSlide++;
+  }
+  showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+
