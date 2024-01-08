@@ -14,7 +14,7 @@
 </head>
 <body >
 
-    <!-- Header Start -->
+    <!-- Navbar Start -->
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ">
         <div class="container">
             <div class="flex items-center justify-between relative lg:mr-10 lg:ml-10">
@@ -53,15 +53,8 @@
             </div>
         </div>
     </header>
-    <!-- Header End -->
+    <!-- Navbar End -->
 
-
-     <!-- Navbar Section -->
-    <section>
-           
-            
-    </section>  
-    <!-- Navbar Section End -->
 
     <!-- Header Section Start -->
     <section id="home" class="pt-1 bg-darkPurple lg:rounded-8xl  lg:mr-10 lg:ml-10 md:mt-24 mt-14 ">
@@ -110,9 +103,9 @@
     </section>
      <!-- AboutUs Section End -->
 
-     <!-- Service Start -->
 
-     <section class=" lg:ml-28  lg:mr-28 ml-5 mr-5 "> 
+     <!-- Service Start -->
+     <section class=" lg:ml-36  lg:mr-28 ml-5 mr-5 "> 
         <h2 class="lg:text-3xl text-2xl font-nunito font-bold text-darkPurple text-center mb-8 -mt-5">Layanan</h2>
     <div class="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-4 ">
         <!-- Card 1 -->
@@ -120,10 +113,6 @@
         <img class="max-w-full mx-auto" src="../img/animasi6.png" alt="Placeholder Image">
         <div class="flex flex-col justify-between px-6 py-4">
             <h2 class="font-bold font-nunito text-slate-900 lg:text-xl pb-3">Pembuatan Website</h2>
-            <!-- <p class="text-slate-900 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p> -->
-            
             <button class="bg-darkPurple hover:opacity-80  text-xs lg:text-base text-white font-bold py-2 px-4 rounded-lg mt-2">Lihat</button>
             <div class="flex-1"></div>
         </div>
@@ -135,9 +124,6 @@
         <img class="max-w-full mx-auto" src="../img/webDesign.png" alt="Placeholder Image">
         <div class="flex flex-col justify-between px-6 py-4">
             <h2 class="font-bold font-nunito text-slate-900 lg:text-xl pb-3">Desain Ui/Ux Website</h2>
-            <!-- <p class="text-slate-900 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p> -->
             <div class="flex-grow"></div>
             <button class="bg-darkPurple hover:opacity-80 text-xs lg:text-base text-white font-bold py-2 px-4 rounded-lg mt-2">lihat</button>
             <div class="flex-1"></div>
@@ -149,54 +135,114 @@
         <img class="max-w-full h-auto" src="../img/animasi5.png" alt="Placeholder Image">
         <div class="flex flex-col justify-between px-6 py-4">
             <h2 class="font-bold font-nunito text-slate-900 lg:text-xl pb-3">Pengembangan Website</h2>
-            <!-- <p class="text-slate-900 font-nunito text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p> -->
             <button class="bg-darkPurple hover:opacity-80 text-xs lg:text-base text-white font-bold py-2 px-4 rounded-lg mt-2">Lihat</button>
             <div class="flex-1"></div>
         </div>
         </div>
-
-        
-    
-    </div>
-</section>
-
+        </div>
+    </section>
      <!-- Service End -->
 
-    
-    <br><br><br><br><br>
+   
+     <!-- Slider Start -->
 
-    <h2 class="lg:text-3xl text-2xl font-nunito font-bold text-darkPurple text-center mb-8 -mt-5">Projek Kami</h2>
-    <div class="relative ">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex items-center justify-center h-96 overflow-hidden relative">
-            <!-- Slide 1 -->
-            <div class="w-full">
-              <img src="../img/animasi5.png" alt="Slide 1" class="w-full h-full object-cover">
+        <section class="mt-32">
+            <h2 class="lg:text-3xl text-2xl font-nunito font-bold text-darkPurple text-center mb-8">Projek Kami</h2>
+            <div class="flex">
+                <div class="w-2/12 flex items-center">
+                    <div class="w-full text-right">
+                        <button onclick="prev()" class="p-3 rounded-full bg-lightPurple border border-gray-100 shadow-lg mr-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                              </svg>
+                              
+                        </button>
+                    </div>
+                </div>
+                <div id="sliderContainer" class="w-10/12 overflow-hidden">
+                    <ul id="slider" class="flex w-full">
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi3.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi2.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi9.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi8.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi7.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi6.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi5.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi4.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        <li class="p-5">
+                            <div class="border rounded-lg p-5 h-full">
+                                <img class="h-50 w-full object-cover rounded-md" src="../img/animasi3.png" alt="">
+                                <h2 class="mt-2 text-2xl font-bold font-nunito text-slate-900">Projek 1</h2>
+                                <button class="mt-4 px-6 py-3 rounded-md bg-darkPurple text-lightPurple font-bold font-nunito">Lihat Projek</button>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="w-2/12 flex items-center">
+                    <div class="w-full">
+                        <button onclick="next()" class="p-3 rounded-full bg-lightPurple border border-gray-100 shadow-xl ml-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                              </svg>
+                              
+                        </button>
+                    </div>
+                </div>
             </div>
-            <!-- Slide 2 -->
-            <div class="w-full">
-              <img src="../img/animasi8.png" alt="Slide 2" class="w-full h-full object-cover">
-            </div>
-            <!-- Slide 3 -->
-            <div class="w-full">
-              <img src="../img/animasi1.png" alt="Slide 3" class="w-full h-full object-cover">
-            </div>
-            <!-- Tambahkan lebih banyak slide sesuai kebutuhan -->
-      
-            <!-- Tombol navigasi -->
-            <button class="absolute top-1/2 transform -translate-y-1/2 left-0  text-white px-4 py-2 rounded-l-md z-10"
-              onclick="prevSlide()">
-              &lt;
-            </button>
-            <button class="absolute top-1/2 transform -translate-y-1/2 right-0  text-white px-4 py-2 rounded-r-md z-10"
-              onclick="nextSlide()">
-              &gt;
-            </button>
-          </div>
-        </div>
-      </div>
+        </section>
+
+     <!-- Slider End -->
+    
+     
 
 
      <script src="../js/script.js">
