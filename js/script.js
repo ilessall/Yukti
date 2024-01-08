@@ -46,12 +46,11 @@ for (let index = 0; index < cards.length; index++) {
 }
 
 function prev(){
-
-  if (+slider.style.marginLeft.slice(0, -2) != -cardWidth * (cards.length - elementsToShow))
-       slider.style.marginLeft = ((+slider.style.marginLeft.slice (0, -2))-cardWidth)+'px';
+  if (+slider.style.marginLeft.slice (0, -2) != 0)
+  slider.style.marginLeft = ((+slider.style.marginLeft.slice (0, -2))+cardWidth)+'px';
 }
 
 function next(){
-  if (+slider.style.marginLeft.slice (0, -2) != 0)
-  slider.style.marginLeft = ((+slider.style.marginLeft.slice (0, -2))+cardWidth)+'px'; // 100px
+  if (+slider.style.marginLeft.slice(0, -2) !=-cardWidth*(cards.length-elementsToShow))
+  slider.style.marginLeft = ((+slider.style.marginLeft.slice (0, -2))-cardWidth)+'px'; 
 } 

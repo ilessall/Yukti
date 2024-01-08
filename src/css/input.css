@@ -27,3 +27,7 @@ body{
 .hamburger-active > span:nth-child(3) {
     @apply origin-bottom-left -rotate-45;
 }
+
+.card {
+    @apply rounded-xl shadow-lg;
+}
