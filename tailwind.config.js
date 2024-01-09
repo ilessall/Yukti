@@ -22,7 +22,7 @@ module.exports = {
         darkPurple: '#632e7c',
         lightPurple: '#fdfefc', 
         purple2: '#aa8db0',
-        bgku : '#dfcce8',
+        bgku : '#b3a4ba',
       },
       screens: {
         '2xl': '1320px',
