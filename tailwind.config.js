@@ -21,7 +21,8 @@ module.exports = {
         secondPurple: '#e0c0df',
         darkPurple: '#632e7c',
         lightPurple: '#fdfefc', 
-        purple2: '#9e80ab',
+        purple2: '#aa8db0',
+        bgku : '#dfcce8',
       },
       screens: {
         '2xl': '1320px',
