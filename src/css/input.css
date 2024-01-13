@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+  
 body{
     @apply bg-bgku; 
-    overflow-x: hidden;
+    
 }
 
 
