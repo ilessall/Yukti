@@ -54,3 +54,43 @@ function next(){
   if (+slider.style.marginLeft.slice(0, -2) !=-cardWidth*(cards.length-elementsToShow))
   slider.style.marginLeft = ((+slider.style.marginLeft.slice (0, -2))-cardWidth)+'px'; 
 } 
+
+// Dropdown
+// function toggleDropdown(containerId, dropdownId, iconId, textBelowId) {
+//   var toggleContainer = document.getElementById(containerId);
+//   var dropdown = document.getElementById(dropdownId);
+//   var textBelow = document.getElementById(textBelowId);
+//   var isToggled = false;
+
+//   toggleContainer.addEventListener('click', function() {
+//     closeAllDropdowns();
+
+//     isToggled = !isToggled;
+
+//     if (isToggled) {
+//       document.getElementById(iconId).innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />';
+//       document.getElementById(iconId).setAttribute('stroke', '#4299e1');
+//       dropdown.classList.remove('hidden');
+//       textBelow.innerText = 'Sembunyikan';
+//       textBelow.style.color = '#4299e1';
+//     } else {
+//       document.getElementById(iconId).innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />';
+//       document.getElementById(iconId).setAttribute('stroke', 'currentColor');
+//       dropdown.classList.add('hidden');
+//       textBelow.innerText = 'Lihat Semua';
+//       textBelow.style.color = '#2d3748';
+//     }
+//   });
+// }
+
+// function closeAllDropdowns() {
+//   // Close all dropdowns
+//   var allDropdowns = document.querySelectorAll('.dropdown-container .hidden');
+//   allDropdowns.forEach(function(dropdown) {
+//     dropdown.classList.add('hidden');
+//   });
+// }
+
+// // Initialize toggle for each button
+// toggleDropdown('toggleContainer1', 'dropdown1', 'myIcon1', 'textBelow1');
+// toggleDropdown('toggleContainer2', 'dropdown2', 'myIcon2', 'textBelow2');
