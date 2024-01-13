@@ -4,6 +4,7 @@
 
 body{
     @apply bg-bgku; 
+    overflow-x: hidden;
 }
 
 
