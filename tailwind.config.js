@@ -21,7 +21,7 @@ module.exports = {
         secondPurple: '#e0c0df',
         darkPurple: '#632e7c',
         lightPurple: '#faf8fd', 
-        purple2: '#aa8db0',
+        purple2: '#c9a0dc',
         bgku : '#faf8fd',
         txt: '#2e2d36',
       },
