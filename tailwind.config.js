@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       fontFamily:{
         custom: ['HIROMISAKE'],
-        nunito: ['nunito', 'sans-serif'],
+        nunito: ['Noto Sans JP', 'sans-serif'],
       }, 
       borderRadius: {
         '8xl': '2rem', 

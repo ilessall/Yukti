@@ -38,3 +38,20 @@ body{
 .custom-box-shadow {
     box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
   }
+
+  @keyframes slideInRightToLeftFadeIn {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-right-to-left-fade-in {
+    animation: slideInRightToLeftFadeIn 1s ease-out forwards;
+  }
+  
+  
