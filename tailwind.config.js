@@ -20,9 +20,9 @@ module.exports = {
       colors:{
         secondPurple: '#e0c0df',
         darkPurple: '#632e7c',
-        lightPurple: '#dac9f7', 
+        lightPurple: '#EFEBF5', 
         purple2: '#c9a0dc',
-        bgku : '#dac9f7',
+        bgku : '#EFEBF5',
         txt: '#2e2d36',
       },
       screens: {
