@@ -5,7 +5,11 @@
   
 body{
     @apply bg-bgku; 
-    
+}
+
+::selection {
+  background-color: #632e7c; 
+  color: #EFEBF5; 
 }
 
 
