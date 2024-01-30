@@ -159,23 +159,22 @@
 
    
      <!-- Pelanggan Mulai -->
-     <section id="pelanggan" class="pt-16 md:pt-24 mx-5 sm:mx-14 lg:mx-32">
+     <section id="pelanggan" class="pt-16 md:pt-24 mx-1 sm:mx-14 lg:mx-32">
         <div class="container mx-auto">
             <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-10 sm:mb-12">
+                <div class="max-w-xl mx-auto text-center ">
                     <h2 class="font-nunito font-bold text-darkPurple lg:text-3xl text-2xl mb-3">Pelanggan <span class="text-txt">Terbaru</span></h2>
                     <p class="text-base text-txt mb-5">Beberapa website pelanggan terbaru yang menggunakan jasa team yukti</p>
-                    <!-- <a href="blogPage.html" class="font-nunito font-bold text-sm text-lightPurple bg-darkPurple hover:bg-txt py-2 px-4 rounded-lg hover:opacity-95">Lihat Semua</a> -->
                 </div>
             </div>
     
             <!-- Swiper -->
             <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper px-2 pb-14 pt-8 gap-3 sm:gap-0">
                     <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="custom-box-shadow rounded-8xl overflow-hidden mb-12">
-                            <img src="../img/sekolah.png" alt="Sekolah" class="w-full">
+                    <div class="swiper-slide ">
+                        <div class="custom-box-shadow rounded-8xl overflow-hidden ">
+                            <img src="../img/sekolah.png" alt="Sekolah" class="w-full h-36">
                             <div class="p-6">
                                 <a href="#" class="font-bold text-lg mb-3 block text-txt">Website Sekolah</a>
                                 <p class="text-txt text-sm mb-7"> Website ini mencakup fitur-fitur seperti profil sekolah, informasi akademik, daftar fasilitas, kegiatan ekstrakurikuler, serta halaman berita dan pengumuman.</p>
@@ -183,10 +182,10 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Slide 2 dan seterusnya... -->
+                    <!-- Slide 2 -->
                     <div class="swiper-slide">
                         <div class="custom-box-shadow rounded-8xl overflow-hidden">
-                            <img src="../img/undangan.png" alt="Sekolah" class="w-full">
+                            <img src="../img/undangan.png" alt="Sekolah" class="w-full h-36">
                             <div class="p-6">
                                 <a href="#" class="font-bold text-lg mb-3 block text-txt">Website Undangan</a>
                                 <p class="text-txt text-sm mb-7">Website ini dirancang dengan antarmuka yang elegan dan intuitif, menampilkan detail acara seperti tanggal, waktu, lokasi, dan petunjuk arah.</p>
@@ -195,9 +194,10 @@
                         </div>
                     </div>
 
+                    <!-- Slide 3 -->
                     <div class="swiper-slide">
                         <div class="custom-box-shadow rounded-xl overflow-hidden">
-                            <img src="../img/berita.png" alt="Sekolah" class="w-full">
+                            <img src="../img/berita.png" alt="Sekolah" class="w-full h-36">
                             <div class="p-6">
                                 <a href="#" class="font-bold text-lg mb-3 block text-txt">Website Berita</a>
                                 <p class="text-txt text-sm mb-7">Website ini menampilkan desain yang bersih dan mudah dinavigasi, dengan kategori berita yang berbeda seperti politik, ekonomi, olahraga, dan hiburan.</p>
@@ -206,9 +206,10 @@
                         </div>
                     </div>
 
+                    <!-- Slide 4 -->
                     <div class="swiper-slide">
                         <div class="custom-box-shadow rounded-8xl overflow-hidden">
-                            <img src="../img/belanjamalang.png" alt="Sekolah" class="w-full">
+                            <img src="../img/belanjamalang.png" alt="Sekolah" class="w-full h-36">
                             <div class="p-6">
                                 <a href="#" class="font-bold text-lg mb-3 block text-txt">Website Market Place</a>
                                 <p class="text-txt text-sm mb-7">website marketplace umkm yang dirancang untuk menyediakan platform jual beli online bagi pengguna dengan berbagai kategori dan barang bekas.</p>
@@ -224,75 +225,10 @@
             </div>
         </div>
     </section>
-   
-      
-    
-
-        <!-- <section id="pelanggan" class="pt-16 overflow-x-hidden">
-            <div class="max-w-xl mx-auto text-center ">
-                <h2 class="font-nunito font-bold text-darkPurple lg:text-3xl text-2xl mb-3">Pelanggan <span class="text-txt">Terbaru</span></h2>
-                <p class="font-nunito text-base text-txt mt-3 mb-5 px-5">Sebuah website dari klien-klien baru yang telah bergabung dengan jasa dari team Yukti.</p>
-            </div>
-            <div class="flex">
-                <div class="w-2/12 flex items-center z-10">
-                    <div class="w-full text-right ">
-                        <button onclick="prev()" class="p-3 rounded-full bg-darkPurple hover:bg-txt text-lightPurple border border-gray-100 shadow-lg ml-5 sm:ml-0 sm:mr-5 ">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-                              </svg>
-                              
-                        </button>
-                    </div>
-                </div>
-                <div id="sliderContainer" class="w-10/12 overflow-hidden">
-                    <ul id="slider" class="flex w-full gap-5 sm:gap-0">
-                        <li class="ml-3 sm:ml-0 sm:p-5 ">
-                            <div class=" sm:p-5 h-full">
-                                <img class="h-50 w-full  object-cover rounded-lg " src="../img/sekolah.png" alt="">
-                                <h2 class="mt-5 text-md md:text-xl font-bold font-nunito text-txt truncate">Website Sekolah</h2>
-                                <button onclick="window.location.href='https://www.smkbudimuliapakisaji.sch.id/'" class="mt-4 w-full px-6 py-3 rounded-md bg-darkPurple hover:bg-txt text-lightPurple font-bold font-nunito">Lihat Website</button>
-                            </div>
-                        </li>
-                        <li class="sm:p-5">
-                            <div class=" sm:p-5 h-ful">
-                                <img class="h-50 w-full object-cover rounded-lg " src="../img/undangan.png" alt="">
-                                <h2 class="mt-5 text-md md:text-xl font-bold font-nunito text-txt truncate">Website Undangan</h2>
-                                <button onclick="window.location.href='https://undangan.rabine.id/'" class="mt-4 w-full px-6 py-3 rounded-md bg-darkPurple hover:bg-txt text-lightPurple font-bold font-nunito">Lihat Website</button>
-                            </div>
-                        </li>
-                        <li class="sm:p-5">
-                            <div class="sm:p-5 h-full">
-                                <img class="h-50 w-full object-cover rounded-lg " src="../img/belanjamalang.png" alt="">
-                                <h2 class="mt-5 text-md md:text-xl font-bold font-nunito text-txt truncate">Website Umkm</h2>
-                                <button class="mt-4 w-full px-6 py-3 rounded-md bg-darkPurple hover:bg-txt text-lightPurple font-bold font-nunito">Lihat Website</button>
-                            </div>
-                        </li>
-                        <li class=" sm:p-5">
-                            <div class="sm:p-5 h-full">
-                                <img class="h-50 w-full object-cover rounded-lg" src="../img/berita.png" alt="">
-                                <h2 class="mt-5 text-md md:text-xl font-bold font-nunito text-txt truncate">Website Berita</h2>
-                                <button class="mt-4 w-full px-6 py-3 rounded-md bg-darkPurple hover:bg-txt text-lightPurple font-bold font-nunito">Lihat Website</button>
-                            </div>
-                        </li>
-                     
-                    </ul>
-                </div>
-                <div class="w-2/12 flex items-center z-10">
-                    <div class="w-full">
-                        <button onclick="next()" class="p-3 rounded-full bg-darkPurple hover:bg-txt text-lightPurple border border-gray-100 shadow-xl mr-5 sm:mr-0 sm:ml-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                              </svg>
-                              
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>  -->
      <!-- Pelanggan Akhir -->
 
       <!-- Kenapa Mulai -->
-      <section class="pt-16 sm:mt-20 lg:p-20 md:rounded-8xl md:ml-20 md:mr-20 ">
+      <section class="pt-16 sm:mt-20 lg:p-20 md:rounded-8xl ml-1 mr-1 md:ml-28 md:mr-20 ">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full px-3  sm:w-1/2  sm:px-4  lg:w-1/3 order-2 pb-24 sm:pb-0">
@@ -332,10 +268,10 @@
     
     <!-- Blog Mulai -->
 
-        <section id="blog" class="pt-16 md:pt-24 mx-4 sm:mx-14 lg:mx-32 ">
+        <section id="blog" class="pt-16 md:pt-24 nx-1 sm:mx-12 lg:mx-32 ">
             <div class="container">
                 <div class="w-full px-4">
-                    <div class="max-w-xl mx-auto text-center mb-16">
+                    <div class="max-w-xl mx-auto text-center mb-14">
                         <h2 class="font-nunito font-bold text-darkPurple lg:text-3xl text-2xl mb-3">Blog <span class="text-txt">Terkini</span></h2>
                         <p class="text-base text-txt mb-5">Dapatkan informasi terbaru seputar perkembangan teknologi web dan tren terkini di industri jasa pembuatan website kami</p>
                         <a href="blogPage.html" class="font-nunito font-bold text-sm text-lightPurple bg-darkPurple hover:bg-txt py-2 px-4 rounded-lg hover:opacity-95">Lihat Semua</a>
@@ -389,65 +325,107 @@
     <!-- Blog Akhir -->
      
     <!-- Ulasan Mulai -->
-    <section class="py-16  customers ml-8 mr-8 sm:ml-16 sm:mr-16 md:ml-28 md:mr-28" id="customers">
-        <div class="text-center  mx-auto font-nunito">
-            <h2 class=" text-darkPurple text-2xl lg:text-3xl font-bold">Ulasan <span class="text-txt">Pelanggan</span></h2>
-            <p class="text-txt text-base mb-14">Berapa ulasan dari pelanggan yang puas akan jasa kami</p>
-        </div>
-        <!-- Customer Content -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 mb-16">
-            <!-- Review 1 -->
-            <div class="p-6 custom-box-shadow rounded-lg border-b-4 border-darkPurple hover:transform hover:-translate-y-3 hover:transition-transform">
-                <i class='bx bxs-quote-alt-left text-2xl text-darkPurple'></i>
-                <div class="flex items-center gap-2 mt-4">
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star-half text-darkPurple'></i>
-                </div>
-                <p class="text-sm mt-4">Luar biasa! team Yukti memberikan desain yang segar dan responsif, meningkatkan pengalaman pengguna website kami. Sangat profesional dan inovatif.</p>
-                <div class="flex items-center mt-4  font-nunito">
-                    <img src="../img/mojin.png" alt="" class="w-12 h-12 rounded-full object-cover">
-                    <h3 class="text-base font-semibold ml-2">Mojinsei</h3>
+    <section class="pt-16 md:pt-24 mx-1 sm:mx-14 lg:mx-32">
+        <div class="container mx-auto">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center ">
+                    <h2 class="font-nunito font-bold text-darkPurple lg:text-3xl text-2xl mb-3">Ulasan <span class="text-txt">Pelanggan</span></h2>
+                    <p class="text-base text-txt ">Berapa ulasan dari pelanggan yang puas akan jasa kami</p>
                 </div>
             </div>
-            <!-- Review 2 -->
-            <div class="p-6 custom-box-shadow rounded-lg border-b-4 border-darkPurple hover:transform hover:-translate-y-3 hover:transition-transform">
-                <i class='bx bxs-quote-alt-left text-2xl text-darkPurple'></i>
-                <div class="flex items-center gap-2 mt-4">
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star-half text-darkPurple'></i>
-                </div>
-                <p class="text-sm mt-4">Kerjasama dengan Yukti sangat efektif. Prosesnya lancar, hasilnya mengagumkan. Website kami kini tidak hanya indah tapi juga fungsional.</p>
-                <div class="flex items-center mt-4  font-nunito">
-                    <img src="../img/xin.jpeg" alt="" class="w-12 h-12 rounded-full object-cover">
-                    <h3 class="text-base font-semibold ml-2">Xin Quan</h3>
-                </div>
-            </div>
+    
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper px-2 pb-12 pt-8 gap-3 sm:gap-0">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide ">
+                        <div class="p-6 custom-box-shadow rounded-lg border-b-4 border-darkPurple ">
+                            <i class='bx bxs-quote-alt-left text-2xl text-darkPurple'></i>
+                            <div class="flex items-center gap-2 mt-4">
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star-half text-darkPurple'></i>
+                            </div>
+                            <p class="text-sm mt-4">Luar biasa! team Yukti memberikan desain yang segar dan responsif, meningkatkan pengalaman pengguna website kami. Sangat profesional dan inovatif.</p>
+                            <div class="flex items-center mt-4  font-nunito">
+                                <img src="../img/mojin.png" alt="" class="w-12 h-12 rounded-full object-cover">
+                                <h3 class="text-base font-semibold ml-2">Mojinsei</h3>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="p-6 custom-box-shadow rounded-lg border-b-4 border-darkPurple hover:transform hover:-translate-y-3 hover:transition-transform">
-                <i class='bx bxs-quote-alt-left text-2xl text-darkPurple'></i>
-                <div class="flex items-center gap-2 mt-4 ">
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star text-darkPurple'></i>
-                    <i class='bx bxs-star-half text-darkPurple'></i>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="p-6 custom-box-shadow rounded-lg border-b-4 border-darkPurple">
+                            <i class='bx bxs-quote-alt-left text-2xl text-darkPurple'></i>
+                            <div class="flex items-center gap-2 mt-4">
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star-half text-darkPurple'></i>
+                            </div>
+                            <p class="text-sm mt-4">Kerjasama dengan Yukti sangat efektif. Prosesnya lancar, hasilnya mengagumkan. Website kami kini tidak hanya indah tapi juga fungsional.</p>
+                            <div class="flex items-center mt-4  font-nunito">
+                                <img src="../img/xin.jpeg" alt="" class="w-12 h-12 rounded-full object-cover">
+                                <h3 class="text-base font-semibold ml-2">Xin Quan</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="p-6 custom-box-shadow rounded-lg border-b-4 border-darkPurple">
+                            <i class='bx bxs-quote-alt-left text-2xl text-darkPurple'></i>
+                            <div class="flex items-center gap-2 mt-4 ">
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star-half text-darkPurple'></i>
+                            </div>
+                            <p class="text-sm mt-4">Dari desain hingga pengembangan, Yukti menyediakan semua yang kami butuhkan. Timnya ahli, hasilnya memuaskan. Rekomendasi terbaik untuk kebutuhan web.</p>
+                            <div class="flex items-center mt-4 font-nunito">
+                                <img src="../img/animasi11.png" alt="" class="w-12 h-12 rounded-full object-cover">
+                                <h3 class="text-base font-semibold ml-2">Agus Malik</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="p-6 custom-box-shadow rounded-lg border-b-4 border-darkPurple">
+                            <i class='bx bxs-quote-alt-left text-2xl text-darkPurple'></i>
+                            <div class="flex items-center gap-2 mt-4">
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star text-darkPurple'></i>
+                                <i class='bx bxs-star-half text-darkPurple'></i>
+                            </div>
+                            <p class="text-sm mt-4">Luar biasa! team Yukti memberikan desain yang segar dan responsif, meningkatkan pengalaman pengguna website kami. Sangat profesional dan inovatif.</p>
+                            <div class="flex items-center mt-4  font-nunito">
+                                <img src="../img/mojin.png" alt="" class="w-12 h-12 rounded-full object-cover">
+                                <h3 class="text-base font-semibold ml-2">Mojinsei</h3>
+                            </div>
+                        </div>
+                    </div>
+
+               
+
                 </div>
-                <p class="text-sm mt-4">Dari desain hingga pengembangan, Yukti menyediakan semua yang kami butuhkan. Timnya ahli, hasilnya memuaskan. Rekomendasi terbaik untuk kebutuhan web.</p>
-                <div class="flex items-center mt-4 font-nunito">
-                    <img src="../img/animasi11.png" alt="" class="w-12 h-12 rounded-full object-cover">
-                    <h3 class="text-base font-semibold ml-2">Agus Malik</h3>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
     <!-- Ulasan Akhir -->
+
+
+    
+
 
     <!-- Footer Mulai -->
 
@@ -488,10 +466,6 @@
     <!-- Footer Akhir -->
 
 
-     
-     
-    
-     
 
 
      <script src="../js/script.js">
