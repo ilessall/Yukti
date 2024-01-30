@@ -38,11 +38,13 @@ body{
     @apply rounded-xl shadow-lg;
 }
 
-
+/* Box Shadow */
 .custom-box-shadow {
     box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
   }
 
+
+/* Animasi */
   @keyframes slideInRightToLeftFadeIn {
     from {
       transform: translateX(100%);
@@ -58,4 +60,4 @@ body{
     animation: slideInRightToLeftFadeIn 1s ease-out forwards;
   }
   
-  
+ 
