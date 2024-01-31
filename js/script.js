@@ -43,4 +43,25 @@ var swiper = new Swiper('.mySwiper', {
   }
 });
 
+var swiperAutoPlay = new Swiper('.mySwiperAutoPlay', {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true, 
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false, 
+  },
+  breakpoints: {
+    // ketika layar lebar >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    // ketika layar lebar >= 1024px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  }
+});
 

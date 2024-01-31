@@ -693,6 +693,10 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -715,14 +719,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-16 {
-  margin-top: 4rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
 }
 
 .block {
@@ -753,12 +749,28 @@ video {
   height: 9rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
 .h-64 {
   height: 16rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-12 {
   width: 3rem;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-3\/5 {
@@ -767,6 +779,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-full {
@@ -836,6 +852,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-0 {
+  gap: 0px;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -929,6 +949,11 @@ video {
   background-color: transparent;
 }
 
+.bg-txt {
+  --tw-bg-opacity: 1;
+  background-color: rgb(46 45 54 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1016,6 +1041,10 @@ video {
   padding-bottom: 6rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -1038,10 +1067,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-0 {
-  padding-bottom: 0px;
 }
 
 .text-center {
@@ -1074,6 +1099,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-xs {
@@ -1255,6 +1285,10 @@ body {
   background-color: rgb(46 45 54 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-opacity-95:hover {
+  --tw-bg-opacity: 0.95;
+}
+
 .hover\:text-bgku:hover {
   --tw-text-opacity: 1;
   color: rgb(239 235 245 / var(--tw-text-opacity));
@@ -1319,6 +1353,10 @@ body {
     width: 50%;
   }
 
+  .sm\:w-80 {
+    width: 20rem;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1329,6 +1367,14 @@ body {
 
   .sm\:gap-0 {
     gap: 0px;
+  }
+
+  .sm\:gap-16 {
+    gap: 4rem;
+  }
+
+  .sm\:gap-14 {
+    gap: 3.5rem;
   }
 
   .sm\:rounded-8xl {
@@ -1412,6 +1458,14 @@ body {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
+  .md\:gap-14 {
+    gap: 3.5rem;
   }
 
   .md\:rounded-8xl {
@@ -1585,6 +1639,14 @@ body {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
+  .lg\:gap-20 {
+    gap: 5rem;
+  }
+
   .lg\:rounded-none {
     border-radius: 0px;
   }
@@ -1673,6 +1735,10 @@ body {
 @media (min-width: 1280px) {
   .xl\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .xl\:gap-0 {
+    gap: 0px;
   }
 }
   
