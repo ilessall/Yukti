@@ -24,6 +24,7 @@ hamburger.addEventListener('click', function () {
 var swiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
   spaceBetween: 10,
+  loop: true, // Menambahkan opsi loop di sini
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
