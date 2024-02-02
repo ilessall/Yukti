@@ -19,60 +19,140 @@
 </head>
 <body >
 
-
-
-
-    <h1>Hello Mars</h1>
-
-
-
-
-      <!-- Footer Mulai -->
-
-      <section class="footer bg-darkPurple p-10 sm:p-20 md:p-32 lg:pl-24 lg:pr-24 md:pt-14 md:pb-10  pb-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
-        <div class="footer-box ">
-            <img src="../img/yukti4.png" alt="" class="w-3/5">
-            <p class="font-nunito text-lightPurple text-sm mb-4 mt-4">Tumbuh sebagai sebuah startup yang berfokus pada pembuatan dan pengembangan web yang mengesankan, kami mempersembahkan solusi-solusi inovatif untuk menghidupkan bisnis anda di dunia digital.</p>
-            <div class="social flex space-x-2 text-lightPurple">
-                <a href="#" class="bx bxl-facebook"></a>
-                <a href="#" class="bx bxl-twitter"></a>
-                <a href="#" class="bx bxl-instagram"></a>
-                <a href="#" class="bx bxl-youtube"></a>
+    <!-- Header Mulai -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 ">
+        <div class="container">
+            <div class="flex items-center justify-between relative lg:mr-24 lg:ml-24">
+                <div class="px-4">
+                    <a href="index.html"> <img src="../img/yuktiLogo.png" class="w-8 block py-2 md:w-10 md:py-4" alt="Yukti Logo"></a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button"
+                    class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out rigin-top-left"></span>
+                    </button>
+                    
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-lightPurple shadow-lg rounded-b-lg w-full right-4 top-full  lg:block lg:static lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group rounded-full lg:pl-0 lg:pr-0 lg:pb-0 pl-5 pr-5 pb-5 ">
+                                <a href="index.html" class="px-6 font-nunito font-bold py-2 rounded-full w-full bg-darkPurple text-white transition duration-500 lg:mr-5 ">Beranda</a>
+                            </li>
+                            
+                            <li class="group rounded-full lg:pl-0 lg:pr-0 lg:pb-0 pl-5 pr-5 pb-5 ">
+                                <a href="index.html#aboutUs" class="px-6 py-2 font-nunito font-bold rounded-full text-darkPurple hover:bg-darkPurple hover:text-lightPurple transition duration-500  ">Tentang</a>
+                            </li>
+                            <li class="group rounded-full lg:pl-0 lg:pr-0 lg:pb-0 pl-5 pr-5 pb-5">
+                                <a href="index.html#service" class="px-6 py-2 font-nunito font-bold  rounded-full text-darkPurple hover:bg-darkPurple hover:text-lightPurple  transition duration-500  ">Layanan</a>
+                            </li>
+                            <li class="group rounded-full lg:pl-0 lg:pr-0 lg:pb-0 pl-5 pr-5 pb-5">
+                                <a href="index.html#pelanggan" class="px-6 py-2 font-nunito font-bold rounded-full text-darkPurple hover:bg-darkPurple hover:text-lightPurple  transition duration-500  ">Pelanggan</a>
+                            </li>
+                            
+                            <li class="group rounded-full lg:pl-0 lg:pr-0 lg:pb-0 pl-5 pr-5 pb-5">
+                                <a href="index.html#blog" class="px-6 py-2 font-nunito font-bold rounded-full text-darkPurple hover:bg-darkPurple hover:text-lightPurple  transition   duration-500 ">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
-        <div class="footer-box md:ml-14">
-            <h2 class="text-lg font-nunito font-bold text-slate-950 mb-4">Tentang</h2>
-            <a href="#" class="text-lightPurple hover:opacity-85">Tentang</a>
-            <br>
-            <a href="#" class="text-lightPurple hover:opacity-85">Layanan</a>
-            <br>
-            <a href="#" class="text-lightPurple hover:opacity-85">Pelanggan</a>
-            <br>
-            <a href="#" class="text-lightPurple hover:opacity-85">Blog</a>
-        </div>
-        <div class="footer-box overflow-hidden">
-            <h2 class="text-lg font-bold text-slate-950 font-nunito mb-4">Alamat</h2>
-          <a href="https://maps.app.goo.gl/Ztve88uL1RJk4jUg7"><p class="font-nunito text-lightPurple hover:text-opacity-90">  <i class='bx bx-current-location'></i> Jl. Lkr. Bar. Kepanjen No.10, Ngadilangkung, Kec. Kepanjen, Kabupaten Malang, Jawa Timur</p></a> 
-          <a href=""><p class="font-nunito text-lightPurple hover:text-opacity-90"><i class='bx bx-phone'></i> +62 812-3342-2006
-          </p></a>
-        </div>
-        <div class="footer-box md:ml-14">
-            <h2 class="text-lg font-bold text-slate-950 font-nunito mb-4">Jam Operasi</h2>
-           <p class="text-lightPurple hover:opacity-85">Senin-Jumat : 07.00-18.00</p>
-           <p class="text-lightPurple hover:opacity-85">Sabtu : 08.00-12.00</p>
-           <p class="text-lightPurple hover:opacity-85">Minggu & Tgl Merah : Libur</p>        
-        </div>
+    </header>
+    <!-- Header Akhir -->
+
+    <!-- Blog Mulai-->
+    <section id="home" class="pt-1  lg:mr-10 lg:ml-10 md:mr-5 md:ml-5 md:mt-16 mt-14  overflow-hidden">
+        <div class="container sm:rounded-8xl ">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-2 lg:w-1/2 lg:px-20">
+                    <p class="mt-5 lg:mt-0  text-base font-nunito font-bold text-txt md:text-lg">#Tutorial</p>
+                    <h1 class="text-2xl font-nunito font-bold text-darkPurple md:text-2xl lg:text-4xl">Membangun Website Interaktif: Panduan Langkah demi Langkah untuk Pemula</h1>
+                    <p class="mt-2  text-base font-nunito font-bold text-txt md:text-lg" >Xin Yuan | Senin, 17 Jul 2023</p>
+                </div>
+                
+                <div class="w-full self-end lg:w-1/2 ">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0 ">
+                        <img src="../img/webinteratif.png"  class=" max-w-full rounded-8xl mx-auto z-10 relative lg:max-w-sm lg:w-auto  custom-box-shadow ">      
+                
+                    </div>
+                </div>  
+            </div>
+        </div> 
     </section>
-    <div class="bg-txt text-lightPurple text-center text-sm font-nunito py-1">&#169 Copyright Yukti 2024</div>
-<!-- Footer Akhir -->
+     <!-- Blog Akhir -->
+
+     <!-- Content -->
+     <section class="ml-36 mr-44  py-20 ">
+        <div class=" text-justify font-nunito text-lg text-txt">
+            <p>Membuat website interaktif bukan hanya tentang coding; ini adalah seni yang memadukan desain dan teknologi untuk menciptakan pengalaman pengguna yang menarik dan menyenangkan. Saat kita menyelami dunia pengembangan web, kita mulai dengan HTML, yang menentukan kerangka dasar situs. CSS kemudian menambahkan estetika, memberikan warna, bentuk, dan tekstur. Namun, saat JavaScript terlibat, website benar-benar datang ke hidup, memungkinkan interaksi yang dinamis dan responsif terhadap tindakan pengguna.</p>
+            <div class="flex justify-center py-5">
+                <img src="../img/bonsai1.png" alt="">
+            </div>
+            <p>Sebagai contoh, bayangkan sebuah halaman web yang menampilkan galeri foto. HTML menyusun foto-foto tersebut dalam grid atau slider. CSS mengatur presentasi, seperti ukuran foto, warna latar belakang, dan transisi halus antar gambar.</p>
+            <div class="flex justify-center py-5">
+                <img src="../img/bonsai2.png" alt="">
+            </div>
+            <p>Saat JavaScript ditambahkan, galeri tersebut bisa berubah dari sekadar tampilan statis menjadi interaktif. Pengguna bisa mengklik foto untuk melihatnya dalam ukuran penuh, atau mungkin slider bergerak secara otomatis, dengan kemampuan untuk menghentikan dan menjelajahi foto pada kecepatan mereka sendiri.</p>
+            <div class="flex justify-center py-5">
+                <img src="../img/bonsai3.png" alt="">
+                <img src="../img/bonsai4.png" alt="">
+            </div>
+            <p>Setiap langkah dalam proses pembuatan website interaktif ini mengandung lapisan kompleksitas dan kreativitas. HTML membentuk fondasi; CSS menambahkan keindahan visual; dan JavaScript memperkenalkan elemen dinamis dan interaktif yang menjadikan website tidak hanya sebuah halaman untuk dilihat, tapi juga untuk diinteraksikan.
+
+                Melalui penggunaan ketiga teknologi ini, pengembang web dapat menciptakan pengalaman yang kaya dan menarik bagi pengunjung website. Dari situs portofolio yang menampilkan karya seni hingga platform e-commerce yang menawarkan pengalaman belanja yang mulus, kemampuan untuk menggabungkan konten statis dengan elemen interaktif adalah apa yang membedakan website modern.
+                
+                Jadi, saat Anda membangun website Anda sendiri, ingatlah untuk berpikir tentang bagaimana setiap elemen—dari layout hingga desain, hingga interaktivitas—bekerja bersama untuk menciptakan pengalaman pengguna yang kohesif dan menarik. Setiap foto, setiap baris kode, dan setiap desain adalah bagian dari cerita yang Anda ceritakan melalui website Anda.</p>
+            </div>  
+           </div>
+     </section>
+
+   
+
+  <section class="footer bg-darkPurple p-10 sm:p-20 md:p-32 lg:pl-24 lg:pr-24 md:pt-14 md:pb-10  pb-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+            <div class="footer-box ">
+                <img src="../img/yukti4.png" alt="" class="w-3/5">
+                <p class="font-nunito text-lightPurple text-sm mb-4 mt-4">Tumbuh sebagai sebuah startup yang berfokus pada pembuatan dan pengembangan web yang mengesankan, kami mempersembahkan solusi-solusi inovatif untuk menghidupkan bisnis anda di dunia digital.</p>
+                <div class="social flex space-x-2 text-lightPurple">
+                    <a href="#" class="bx bxl-facebook"></a>
+                    <a href="#" class="bx bxl-twitter"></a>
+                    <a href="#" class="bx bxl-instagram"></a>
+                    <a href="#" class="bx bxl-youtube"></a>
+                </div>
+            </div>
+            <div class="footer-box md:ml-14">
+                <h2 class="text-lg font-nunito font-bold text-slate-950 mb-4">Tentang</h2>
+                <a href="#" class="text-lightPurple hover:opacity-85">Tentang</a>
+                <br>
+                <a href="#" class="text-lightPurple hover:opacity-85">Layanan</a>
+                <br>
+                <a href="#" class="text-lightPurple hover:opacity-85">Pelanggan</a>
+                <br>
+                <a href="#" class="text-lightPurple hover:opacity-85">Blog</a>
+            </div>
+            <div class="footer-box overflow-hidden">
+                <h2 class="text-lg font-bold text-slate-950 font-nunito mb-4">Alamat</h2>
+              <a href="https://maps.app.goo.gl/Ztve88uL1RJk4jUg7"><p class="font-nunito text-lightPurple hover:text-opacity-90">  <i class='bx bx-current-location'></i> Jl. Lkr. Bar. Kepanjen No.10, Ngadilangkung, Kec. Kepanjen, Kabupaten Malang, Jawa Timur</p></a> 
+              <a href=""><p class="font-nunito text-lightPurple hover:text-opacity-90"><i class='bx bx-phone'></i> +62 812-3342-2006
+              </p></a>
+            </div>
+            <div class="footer-box md:ml-14">
+                <h2 class="text-lg font-bold text-slate-950 font-nunito mb-4">Jam Operasi</h2>
+               <p class="text-lightPurple hover:opacity-85">Senin-Jumat : 07.00-18.00</p>
+               <p class="text-lightPurple hover:opacity-85">Sabtu : 08.00-12.00</p>
+               <p class="text-lightPurple hover:opacity-85">Minggu & Tgl Merah : Libur</p>        
+            </div>
+        </section>
+        <div class="bg-txt text-lightPurple text-center text-sm font-nunito py-1">&#169 Copyright Yukti 2024</div>
+    <!-- Footer Akhir -->
 
 
 
 
- <script src="../js/script.js">
+     <script src="../js/script.js">
 
- </script>
-
+     </script>
+    
 </body>
 </html>
 
