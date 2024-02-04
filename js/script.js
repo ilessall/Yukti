@@ -10,14 +10,44 @@ window.onscroll = function () {
   }
 };
 
-// Humberger
+// Humberger Menu
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
 
+// Fungsi untuk menutup navMenu dan mengembalikan hamburger ke keadaan awal
+function closeNavMenuOnScroll() {
+    if (!navMenu.classList.contains('hidden')) {
+        navMenu.classList.add('-translate-y-full');
+        navMenu.classList.remove('translate-y-0');
+        setTimeout(() => {
+            navMenu.classList.add('hidden');
+        }, 500); // Menunggu animasi selesai
+        hamburger.classList.remove('hamburger-active');
+    }
+}
+
+// Event listener untuk klik hamburger
 hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active');
-    navMenu.classList.toggle('hidden');
+    if (navMenu.classList.contains('hidden')) {
+        navMenu.classList.remove('hidden');
+        setTimeout(() => {
+            navMenu.classList.remove('-translate-y-full');
+            navMenu.classList.add('translate-y-0');
+        }, 10);
+    } else {
+        navMenu.classList.add('-translate-y-full');
+        navMenu.classList.remove('translate-y-0');
+        setTimeout(() => {
+            navMenu.classList.add('hidden');
+        }, 500);
+    }
 });
+
+// Event listener untuk scroll
+window.addEventListener('scroll', closeNavMenuOnScroll);
+
+
 
 
 // Slider
