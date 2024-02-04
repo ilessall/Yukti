@@ -1502,6 +1502,10 @@ body {
     gap: 4rem;
   }
 
+  .sm\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .sm\:rounded-8xl {
     border-radius: 2rem;
   }
@@ -1601,6 +1605,11 @@ body {
   .md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:pb-10 {
@@ -1718,6 +1727,10 @@ body {
     margin-top: 2.25rem;
   }
 
+  .lg\:mr-20 {
+    margin-right: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1799,6 +1812,11 @@ body {
     padding-right: 9rem;
   }
 
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
@@ -1868,6 +1886,16 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .xl\:mx-52 {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+
+  .xl\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .xl\:w-1\/3 {
     width: 33.333333%;
   }
