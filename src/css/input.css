@@ -60,4 +60,18 @@ body{
     animation: slideInRightToLeftFadeIn 1s ease-out forwards;
   }
   
- 
+  @keyframes slideInLeftToRightFadeIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-left-to-right-fade-in {
+    animation: slideInLeftToRightFadeIn 1s ease-out forwards;
+  }
+

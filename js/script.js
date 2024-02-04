@@ -95,3 +95,5 @@ var swiperAutoPlay = new Swiper('.mySwiperAutoPlay', {
   }
 });
 
+
+// Pop up
