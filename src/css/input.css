@@ -85,10 +85,10 @@ body{
 .fadeIn {
   animation-name: fadeIn;
   animation-fill-mode: forwards;
-  animation-duration: 1s; 
+  animation-duration: 1.5s; 
 }
 
-/* Slide In dari Kanan dan Fade In */
+/* Slide In  dan Fade In */
 @keyframes fadeInSlideInLeft {
   from {
     transform: translateX(100%);
@@ -104,4 +104,21 @@ body{
   animation-duration: 1s;
   animation-fill-mode: forwards; 
   animation-timing-function: ease-out; 
+}
+
+@keyframes slideInLeftToRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slideInLeftToRight {
+  animation-name: slideInLeftToRight;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
 }

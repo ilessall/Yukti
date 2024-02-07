@@ -96,21 +96,54 @@ var swiperAutoPlay = new Swiper('.mySwiperAutoPlay', {
 });
 
 
-// Fade In
-window.addEventListener('scroll', () => {
-  const screenPosition = window.innerHeight;
+// Animasi
+document.addEventListener('DOMContentLoaded', () => {
+  const observerOptions = {
+    root: null, // mengamati elemen terhadap viewport
+    rootMargin: '0px',
+    threshold: 0.1 // callback di-triger ketika elemen terlihat minimal 10% di viewport
+  };
 
-  // Untuk animasi fade in
-  const fadeInElement = document.getElementById('fade-in-element');
-  if (fadeInElement && fadeInElement.getBoundingClientRect().top < screenPosition) {
-    fadeInElement.classList.add('fadeIn');
-  }
+  const fadeInObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fadeIn');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
 
-  // Untuk animasi slide in dari kiri
-  const slideInElement = document.getElementById('slide-in-element');
-  if (slideInElement && slideInElement.getBoundingClientRect().top < screenPosition) {
-    slideInElement.classList.add('fadeInSlideInLeft');
-  }
+  const slideInLeftObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fadeInSlideInLeft');
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, observerOptions);
+
+  const slideInLeftToRightObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('slideInLeftToRight');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Menargetkan semua elemen yang ingin diterapkan fadeIn
+  document.querySelectorAll('.fade-in-element').forEach(el => {
+    fadeInObserver.observe(el);
+  });
+
+  // Menargetkan semua elemen yang ingin diterapkan slideIn dari kanan
+  document.querySelectorAll('.slide-in-element').forEach(el => {
+    slideInLeftObserver.observe(el);
+  });
+   // Menargetkan semua elemen yang ingin diterapkan slideIn dari kiri ke kanan
+   document.querySelectorAll('.slide-in-left-to-right-element').forEach(el => {
+    slideInLeftToRightObserver.observe(el);
+  });
 });
 
 
