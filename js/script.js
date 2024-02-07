@@ -96,4 +96,21 @@ var swiperAutoPlay = new Swiper('.mySwiperAutoPlay', {
 });
 
 
-// Pop up
+// Fade In
+window.addEventListener('scroll', () => {
+  const screenPosition = window.innerHeight;
+
+  // Untuk animasi fade in
+  const fadeInElement = document.getElementById('fade-in-element');
+  if (fadeInElement && fadeInElement.getBoundingClientRect().top < screenPosition) {
+    fadeInElement.classList.add('fadeIn');
+  }
+
+  // Untuk animasi slide in dari kiri
+  const slideInElement = document.getElementById('slide-in-element');
+  if (slideInElement && slideInElement.getBoundingClientRect().top < screenPosition) {
+    slideInElement.classList.add('fadeInSlideInLeft');
+  }
+});
+
+
