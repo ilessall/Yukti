@@ -1544,6 +1544,10 @@ body {
     margin-top: 4rem;
   }
 
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:w-1\/2 {
     width: 50%;
   }
@@ -1820,10 +1824,6 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:opacity-0 {
-    opacity: 0;
   }
 
   .lg\:shadow-none {
